@@ -1,0 +1,1036 @@
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans';
+  background: #f4f4f4;
+  background-repeat: no-repeat;
+  color: white;
+  overflow-x: hidden;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 40px;
+  background-color: #EBF4F6;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  z-index: 999;
+}
+
+nav .logo img {
+  height: 150px;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.hero {
+  text-align: center;
+  padding: 140px 20px;
+  background: linear-gradient(to bottom, #071952, #37B7C3);
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 15px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #088395;
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: white;
+  color: #088395;
+}
+
+.cta-button .cta-arrow {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+  stroke: white;
+}
+
+.cta-button:hover .cta-arrow {
+  transform: rotate(90deg);
+  stroke: #088395;
+}
+
+/*MENGENAL AL QURAN SECTION*/
+
+
+.quran-section {
+  background-color: #e8f1f4;
+  padding: 60px 20px;
+  color: #001c3a;
+}
+
+.quran-section .container {
+  max-width: 800px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.quran-section .section-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.quran-section .section-title span {
+  text-decoration: underline;
+}
+
+.quran-section .section-paragraph {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.quran-section .tags {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 20px;
+  max-width: 900px;
+  margin: 40px auto 0;
+  justify-items: center;
+}
+
+.quran-section .tags span {
+  background-color: #088395;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  width: 160px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+.quran-section .tags span:hover {
+  transform: translateY(-10px);
+  background-color: #06677d;
+  cursor: pointer;
+}
+
+.fullscreen-section {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  margin: 60px auto;
+}
+
+.sumber-hukum-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  background-image: url('../aset/begron.png'); 
+  background-color: rgba(0, 0, 0, 0.4); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sumber-hukum-overlay {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.sumber-hukum-card {
+  background-color: white;
+  padding: 5rem 4rem;
+  width: 80%;
+  max-width: 1000px;
+  color: #001848;
+  text-align: justify;
+  border-radius: 900px / 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.sumber-hukum-card h2 {
+  font-size: 28px;
+  color: #071952;
+  text-align: center;
+
+}
+
+/* Jarak antar section */
+.makna-hukum-section {
+  padding-top: 100px; 
+}
+
+/* Judul Section */
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.underline span {
+  text-decoration: underline;
+  color: #071952;
+  font-size: 30px;
+}
+
+/* Grid untuk dua kolom */
+.makna-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+/* Card dan isinya */
+.makna-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.makna-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.makna-card h3 {
+  font-size: 24px;
+  font-style: italic;
+  color: #071952;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.makna-card p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.quote {
+  margin-top: 10px;
+}
+
+/*responsive Memahami sumber hukumm*/
+@media (max-width: 768px) {
+  .makna-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reverse-on-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/* KOMPONEN HUKUM*/
+.section-sumber-utama {
+  background-color: #eaf3f5;
+  padding: 60px 20px;
+}
+
+.judul-sumber {
+  font-size: 28px;
+  font-weight: 700;
+  color: #031a61;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.judul-sumber span {
+  text-decoration: underline;
+}
+
+.deskripsi-sumber {
+  max-width: 720px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  color: #333;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.ayat-box {
+  background: linear-gradient(to bottom, #C9E1E4, #DAEBEF);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.arabic-text {
+  font-size: 24px;
+  font-weight: 800;
+  color: #031a61;
+  direction: rtl;
+  margin-bottom: 20px;
+}
+
+.arti-ayat {
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  color: #333;
+}
+
+/* Base styles for larger screens */
+.dasar-penetapan-section {
+  background-color: #eaf3f5;
+  padding: 60px 20px;
+}
+
+.penetapan-section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #031a61;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.penetapan-section-title span {
+  text-decoration: underline;
+}
+
+.penetapan-grid {
+  display: flex; /* Use flexbox for horizontal layout */
+  flex-wrap: wrap; /* Allow wrapping if needed */
+  justify-content: center; /* Center the cards */
+  gap: 30px;
+  margin: 0 auto 50px auto;
+  max-width: 1200px; /* Keep centered and constrained */
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.penetapan-card {
+  background: #eaf3f5;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  flex: 1 1 calc(33.333% - 20px); /* 3 cards per row, accounting for gap */
+  max-width: calc(33.333% - 20px); /* Ensure 3 cards fit in a row */
+  box-sizing: border-box;
+  margin-top: 20px; /* Push the card content slightly lower */
+}
+
+.penetapan-card h2 {
+  font-size: 20px;
+  color: #071952;
+  margin-bottom: 30px;
+}
+
+.p penetapan-card p {
+  margin-top: 10px; /* Push the text inside the card a bit lower */
+}
+
+.penetapan-card:hover {
+  transform: translateY(-10px);
+  background-color: #eaf3f5;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+/* .komponen-curve {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: #088395;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+} */
+
+.komponen-hukum-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: #eaf3f5;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.komponen-hukum-card h2 {
+  padding: 90px;
+  font-size: 28px;
+  color: #071952;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+.komponen-hukum .section-title span {
+  text-decoration: underline;
+}
+
+.komponen-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #071952;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.komponen-title span {
+  text-decoration: underline;
+}
+
+.komponen-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.komponen-card {
+  padding: 30px 40px;
+  background: linear-gradient(to bottom, #C9E1E4, #DAEBEF);
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 80px;
+  flex: 1 1 300px;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.komponen-card:hover {
+  transform: translateY(-10px);
+  background-color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.fullscreen-section {
+  min-height: 50vh;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  border-color: red;
+}
+
+.kesimpulan-wrapper {
+  background-color: #078496;
+  background-image: url('../aset/image.png'); 
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #EBF4F6;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+}
+
+.kesimpulan-box {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.title span {
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding-bottom: 6px;
+}
+
+.section-paragraph {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-top: 1.7rem;
+}
+
+.quiz-wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 100px auto; /* Tengah otomatis */
+  background-color: #EBF4F6;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px; /* Tambahkan padding kanan kiri */
+}
+
+
+.quiz-header h2 {
+  text-align: center;
+  color: #071952;
+  font-weight: 700px;
+  font-size: 32px;
+}
+
+.quiz-box {
+  width: 100%;
+  max-width: 100%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 13px;
+  color: #06677d;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* efek card */
+}
+
+.quiz-title {
+  font-size: 24px;
+  color: #071952;
+}
+
+.quiz-question {
+  font-size: 20px;
+  margin-top: auto;
+}
+
+.answer-options {
+  list-style: none;
+  padding: 0;
+}
+
+.answer-option {
+  padding: 10px;
+  background: #f3f1ff;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.answer-option:hover {
+  background: #dad5fd;
+}
+
+.answer-option.correct {
+  background: #d4edda; 
+  font-weight: bold;
+}
+
+.answer-option.incorrect {
+  background: #f8d7da;
+  color: #970000;
+  font-weight: bold;
+}
+
+.quiz-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 27px;
+}
+
+.next-question-btn {
+  color: #fbfeff;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  background: #088395;
+  padding: 10px 30px;
+  border-radius: 6px;
+}
+
+.next-question-btn:hover {
+  background: #06677d;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerContainer {
+  background-color: #088395;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 0;
+  margin-top: auto;
+  position: relative;
+}
+
+
+/* Social Icons */
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: -10px ;
+  margin-bottom: 40px;
+}
+
+.socialIcons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.socialIcons a i {
+  font-size: 1.5em;
+  color: #088395;
+  opacity: 0.9;
+}
+
+.socialIcons a:hover {
+  background-color: #d4edda;
+  transform: scale(1.1);
+}
+
+.socialIcons a:hover i {
+  color: #06677d;
+}
+
+/* Bottom Footer */
+.footerBottom {
+  width: 100%;
+  background-color: #EBF4F6;
+  color: #088395;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.footerText {
+  color: white;
+  margin-top: 5px;
+  font-size: 16px;
+  text-align: center;
+  margin-top: -20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .socialIcons a {
+    width: 35px;
+    height: 35px;
+  }
+
+  .socialIcons a i {
+    font-size: 1.2em;
+  }
+
+  .footerBottom p {
+    font-size: 0.8em;
+  }
+}
+
+/* Responsif (jadikan paling bawah/ terakhir) */
+@media (max-width: 768px) {
+  .quran-section .tags {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .makna-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sumber-hukum-card {
+    border-radius: 30px;
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quran-section .tags {
+    grid-template-columns: 1fr;
+  }
+
+  .quran-section .tags span {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footerContainer {
+    padding: 60px 15px 60px; 
+    text-align: center;
+  }
+
+  .socialIcons {
+    flex-wrap: wrap;      
+    gap: 10px;             
+    margin-top: 20px;
+  }
+
+  .socialIcons a {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    padding: 0;
+  }
+
+  .socialIcons a i {
+    font-size: 1.2em;
+  }
+
+  .footerNav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .footerNav ul li a {
+    margin: 8px 0;
+    font-size: 1.1em;
+  }
+
+  .footerBottom {
+    font-size: 0.9em;
+    padding: 5px 0;
+  }
+}
+
+/* responsive nav */
+@media screen and (max-width: 768px) {
+  nav {
+    width: 100%; 
+    padding: 0 20px; 
+    height: 60px; 
+  }
+
+  nav .logo img {
+    height: 80px; 
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column; 
+    gap: 20px;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    background-color: #EBF4F6;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-links.active {
+    display: flex; 
+  }
+
+  .nav-links a {
+    font-size: 16px; 
+    text-align: center;
+  }
+
+  /* Hamburger menu styles */
+  .hamburger {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: flex; /* Show hamburger on mobile */
+    }
+  }
+}
+
+/* Responsif untuk hero */
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 150px 15px; 
+    border-bottom-left-radius: 60px; 
+    border-bottom-right-radius: 60px;
+  }
+
+  .hero h1 {
+    font-size: 40px; 
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 14px; 
+    max-width: 90%; 
+    margin-bottom: 25px;
+  }
+
+  .cta-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .cta-button .cta-arrow {
+    width: 18px; 
+    height: 18px;
+  }
+}
+
+/* responsive penetapan */
+@media screen and (max-width: 768px) {
+  .dasar-penetapan-section {
+    padding: 40px 15px;
+  }
+
+  .penetapan-section-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .penetapan-grid {
+    flex-direction: column; 
+    gap: 35px;
+    padding: 0 10px;
+  }
+
+  .penetapan-card {
+    flex: 1 1 100%; 
+    max-width: 100%; 
+    padding: 20px 15px;
+    border-radius: 12px;
+    margin-top: 0; 
+  }
+
+  .penetapan-card h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .penetapan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dasar-penetapan-section {
+    padding: 30px 10px;
+  }
+
+  .penetapan-section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .penetapan-grid {
+    gap: 35px;
+  }
+
+  .penetapan-card {
+    padding: 15px 10px;
+  }
+
+  .penetapan-card h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+}
+
+/*respnsive komponen */
+@media screen and (max-width: 768px) {
+  .komponen-hukum-wrapper {
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding: 15px;
+  }
+
+  .komponen-hukum-card h2 {
+    padding: 20px;
+    font-size: 24px;
+  }
+
+  .komponen-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .komponen-grid {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .komponen-card {
+    padding: 20px;
+    margin-bottom: 40px;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .komponen-card:hover {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .komponen-hukum-card h2 {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .komponen-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .komponen-card {
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .quiz-wrapper {
+    width: 100%;
+    padding: 0 16px; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    position: static;
+    left: auto;
+    right: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .quiz-box {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Efek card */
+    box-sizing: border-box;
+  }
+
+  .quiz-header h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .quiz-title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .quiz-question {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .answer-option {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .next-question-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+}
