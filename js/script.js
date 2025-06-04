@@ -39,3 +39,36 @@ if (quizLink && quizSection) {
 
 });
 
+//hamburger
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  // Toggle menu
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  // Smooth scroll untuk link dengan href yang dimulai dengan #
+  document.querySelectorAll('.nav-links a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+      if (href.startsWith('#')) { // Hanya untuk link internal
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+          navLinks.classList.remove('active'); // Tutup menu setelah klik
+        }
+      }
+
+    });
+  });
+
+  // Tutup menu saat klik di luar
+  document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target)) {
+      navLinks.classList.remove('active');
+    }
+  });
+});

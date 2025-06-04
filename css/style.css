@@ -27,7 +27,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  padding: 0 40px;
+  padding: 0 30px;
   background-color: #EBF4F6;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   z-index: 999;
@@ -54,9 +54,15 @@ nav .logo img {
 .hero {
   text-align: center;
   padding: 140px 20px;
-  background: linear-gradient(to bottom, #071952, #37B7C3);
+  background: 
+    url('../aset/Splines.png') no-repeat center top,
+    linear-gradient(to bottom, #071952, #37B7C3);
+  background-size: 2300px, cover;
+  background-position: calc(50% - 0px) top; 
+  
   border-bottom-left-radius: 80px;
   border-bottom-right-radius: 80px;
+  position: relative;
 }
 
 .hero h1 {
@@ -641,11 +647,10 @@ nav .logo img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0 0;
+  padding: 30px 0 0;
   margin-top: auto;
   position: relative;
 }
-
 
 /* Social Icons */
 .socialIcons {
@@ -703,22 +708,6 @@ nav .logo img {
   margin-top: -20px;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-  .socialIcons a {
-    width: 35px;
-    height: 35px;
-  }
-
-  .socialIcons a i {
-    font-size: 1.2em;
-  }
-
-  .footerBottom p {
-    font-size: 0.8em;
-  }
-}
-
 /* Responsif (jadikan paling bawah/ terakhir) */
 @media (max-width: 768px) {
   .quran-section .tags {
@@ -747,7 +736,7 @@ nav .logo img {
 
 @media (max-width: 600px) {
   .footerContainer {
-    padding: 60px 15px 60px; 
+    padding: 20px 15px 0; 
     text-align: center;
   }
 
@@ -775,34 +764,37 @@ nav .logo img {
   }
 
   .footerNav ul li a {
-    margin: 8px 0;
+    margin: 10px 0;
     font-size: 1.1em;
   }
 
   .footerBottom {
     font-size: 0.9em;
-    padding: 5px 0;
+    padding: 1px 0;
   }
 }
 
 /* responsive nav */
 @media screen and (max-width: 768px) {
   nav {
-    width: 100%; 
-    padding: 0 20px; 
-    height: 60px; 
+    width: 100%;
+    padding: 0 20px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   nav .logo img {
-    height: 80px; 
+    height: 80px;
   }
 
   .nav-links {
     display: none;
-    flex-direction: column; 
-    gap: 20px;
+    flex-direction: column;
+    gap: 30px;
     position: absolute;
-    top: 60px; 
+    top: 40px;
     left: 0;
     width: 100%;
     background-color: #EBF4F6;
@@ -811,20 +803,21 @@ nav .logo img {
   }
 
   .nav-links.active {
-    display: flex; 
+    display: flex;
   }
 
   .nav-links a {
-    font-size: 16px; 
+    font-size: 16px;
     text-align: center;
   }
 
   /* Hamburger menu styles */
   .hamburger {
-    display: none; 
+    display: flex;
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
+    margin-right: 40px; /* Tambahkan margin kanan untuk jarak */
   }
 
   .hamburger span {
@@ -833,20 +826,15 @@ nav .logo img {
     background-color: #333;
     border-radius: 2px;
   }
-
-  @media screen and (max-width: 768px) {
-    .hamburger {
-      display: flex; /* Show hamburger on mobile */
-    }
-  }
 }
 
 /* Responsif untuk hero */
 @media screen and (max-width: 768px) {
   .hero {
     padding: 150px 15px; 
-    border-bottom-left-radius: 60px; 
-    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 40px; 
+    border-bottom-right-radius: 40px;
+    background-size: 2300px, cover;
   }
 
   .hero h1 {
@@ -1034,3 +1022,4 @@ nav .logo img {
     font-size: 16px;
   }
 }
+
